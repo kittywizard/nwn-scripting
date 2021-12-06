@@ -1,0 +1,35 @@
+Player:
+NPC:
+Kallino:
+<StartAction> </Start>
+
+---
+
+{
+    Kallino: What is it you want? My story, or the news?
+        Player: News.
+            Kallino: News isn't much. There'e the usual: monsters plaguing travelers. A necromancer in the woods trying to raise an army. The usual.
+            Player: Huh. Forget I asked. Story then?
+        Player: Your story, if you'll tell it.
+            Kallino (link to above):
+    }
+
+{
+    Alie: <StartAction> The half elf woman is dressed in simple, yet fine robes. Intricate silver bracers seem to be the only armor she wears. She looks up at your approach and nods. </Start>
+        Hello there. New around here?
+    Player: I am. That easy to pick out, am I?
+        Alie: Just a bit. I'm Alie Mirnder. This here is my friend, Daelan.
+        Daelan: <StartAction> The giant half orc nods at you but says nothing. </Start> 
+    Player: I'm <FullName>. You are?
+        Alie: Alie Mirnder. This is Daelan Red Tiger.
+
+    Player: You two are an interesting pair.
+            Alie: It's a long story.
+            Daelan: She's the Hero of Ne-
+            Alie: <StartAction> She deftly cuts him off mid sentence. </Start> A story for another time, perhaps?
+    Player: Nice to meet you both. 
+    Player: (IF MONK) What brings a monk and a half-orc to the Copper Chicken?
+        Alie: Recognized me, eh? <StartAction> She brushes robes. </Start> 
+
+    Alie:
+}

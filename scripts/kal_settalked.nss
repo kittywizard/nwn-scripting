@@ -5,7 +5,7 @@
 */
 int StartingConditional()
 {
-    int iKallinoTalked = GetLocalInt(OBJECT_SELF, "KallinoTalked");
+    int iKallinoTalked = GetLocalInt(GetPCSpeaker(), "KallinoTalked");
 
     if (iKallinoTalked == FALSE)
     {

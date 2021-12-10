@@ -1,4 +1,4 @@
 void main()
 {
-    SetLocalInt(OBJECT_SELF, "KallinoTalked", TRUE);
+    SetLocalInt(GetPCSpeaker(), "KallinoTalked", TRUE);
 }

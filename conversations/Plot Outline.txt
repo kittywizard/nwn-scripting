@@ -1,0 +1,7 @@
+Plot Outline
+
+Wake up - not sure why or how, it's an RPG just go with it. You were probably drunk.
+
+You can talk to either Alie, Cela or be hounded by the dwarf if you head downstairs directly.
+    > need to add in checks to see if you talked to Cela before her and then you can tell her you hve the quest alreadty
+

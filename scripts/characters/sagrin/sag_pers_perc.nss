@@ -1,0 +1,18 @@
+//::///////////////////////////////////////////////
+//:: FileName sagrin_pers_perc
+//:://////////////////////////////////////////////
+//:://////////////////////////////////////////////
+//:: Created By: Script Wizard
+//:: Created On: 1
+//:://////////////////////////////////////////////
+#include "nw_i0_tool"
+
+int StartingConditional()
+{
+
+    // Perform skill checks
+    if(!(AutoDC(DC_EASY, SKILL_PERSUADE, GetPCSpeaker())))
+        return FALSE;
+
+    return TRUE;
+}

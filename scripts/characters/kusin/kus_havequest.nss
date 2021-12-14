@@ -1,6 +1,6 @@
 int StartingConditional()
 {
-    int iRatQuest = GetLocalInt(OBJECT_SELF, "RatQuest");
+    int iRatQuest = GetLocalInt(GetPCSpeaker(), "RatQuest");
 
     if(iRatQuest == 1) {
         return TRUE;

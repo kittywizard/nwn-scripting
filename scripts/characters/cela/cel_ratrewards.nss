@@ -1,10 +1,3 @@
-//::///////////////////////////////////////////////
-//:: FileName cel_ratrewards
-//:://////////////////////////////////////////////
-//:://////////////////////////////////////////////
-//:: Created By: Script Wizard
-//:: Created On: 1
-//:://////////////////////////////////////////////
 #include "nw_i0_tool"
 
 void main()
@@ -17,5 +10,8 @@ void main()
 
     // Give the speaker the items
     CreateItemOnObject("nw_wswmss002", GetPCSpeaker(), 1);
+
+    //key to unlock the basement
+    CreateItemOnObject("Basement Key", GetPCSpeaker(), 1);
 
 }

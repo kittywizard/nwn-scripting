@@ -1,3 +1,4 @@
+
 #include "nw_i0_tool"
 
 void main()
@@ -11,7 +12,8 @@ void main()
     // Give the speaker the items
     CreateItemOnObject("nw_wswmss002", GetPCSpeaker(), 1);
 
-    //key to unlock the basement
-    CreateItemOnObject("Basement Key", GetPCSpeaker(), 1);
+    //The blueprint ResRef string of the item to be created.
+
+    CreateItemOnObject("basementkey", GetPCSpeaker(), 1);
 
 }

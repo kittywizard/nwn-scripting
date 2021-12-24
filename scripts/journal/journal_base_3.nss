@@ -7,4 +7,7 @@ void main()
     //if you run the below code, it works
     //int iTest = GetLocalInt(OBJECT_SELF, "RatQuestDone");
     //PrintInteger(iTest);
+
    }
+
+   //not sure this script is needed anymore?

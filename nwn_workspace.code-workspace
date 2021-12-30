@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\Neverwinter Nights\\modules"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "game-script-js",
+		"files.exclude": {
+			"**/*.ncs": true,
+			"**/*.ndb": true
+		}
+	}
+}

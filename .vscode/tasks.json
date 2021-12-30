@@ -1,0 +1,85 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "NWNSC Script Compile File",
+            "type": "process",
+            "args": [
+                "-h",
+                "C:\\Users\\Marleigh\\Documents\\Neverwinter Nights",
+                "-n",
+                "F:\\Steam\\steamapps\\common\\Neverwinter Nights",
+                "-i",
+                "${fileDirname}",
+                "${file}"
+            ],
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${fileDirname}"
+                ],
+                "pattern": {
+                    "regexp": "(.*?(?=(?:\\()|$))\\((.*?)\\): (Warning|Error): (.*)",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                },
+                "owner": "nwnsc"
+            },
+            "command": [
+                "nwnsc.exe"
+            ],
+            "presentation": {
+                "clear": true,
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "NWNSC Script Compile Everything in Folder",
+            "type": "process",
+            "args": [
+                "-h",
+                "C:\\Users\\USERNAME\\Documents\\Neverwinter Nights",
+                "-n",
+                "F:\\Steam\\steamapps\\common\\Neverwinter Nights",
+                "-i",
+                "${fileDirname}",
+                "${fileDirname}\\*.nss"
+            ],
+            "problemMatcher": {
+                "fileLocation": [
+                    "relative",
+                    "${fileDirname}"
+                ],
+                "pattern": {
+                    "regexp": "(.*?(?=(?:\\()|$))\\((.*?)\\): (Warning|Error): (.*)",
+                    "file": 1,
+                    "line": 2,
+                    "severity": 3,
+                    "message": 4
+                },
+                "owner": "nwnsc"
+            },
+            "command": [
+                "nwnsc.exe"
+            ],
+            "presentation": {
+                "clear": true,
+                "reveal": "always",
+                "panel": "new"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

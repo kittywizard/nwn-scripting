@@ -1,20 +1,33 @@
 void main() {
 
-    //need to check after all rats are done - because of a bug on OnEncounter
-    object oPC = GetEnteringObject();
-    if (GetIsPC(oPC)) {
-        int iRatCounter = GetLocalInt(oPC, "RatQuestCounter");
+    object oPC = GetFirstPC();
+    //not multiplayer friendly
 
-        if (iRatCounter == 3) {
-            //update journal
+//check to make sure object is PC
+    if(GetIsPC(oPC)) {
+    PrintString("PC triggers the onExhausted thing");
+
+        int iRatCounter = GetLocalInt(oPC, "RatQuest");
+
+        //check to see if rat quest is done, but journal didn't get updated for reasons
+        if(iRatCounter == 3) {
+        //update journal
             AddJournalQuestEntry("Main", 0005, oPC);
-        } else {
+        }
+        else {
             iRatCounter++;
-            SetLocalInt(oPC, "RatQuestCounter", iRatCounter);
+            SetLocalInt(oPC, "RatQuest", iRatCounter);
+
+            //check again to see if quest is 'done'
+            if(GetLocalInt(oPC, "RatQuest") == 3) {
+                  AddJournalQuestEntry("Main", 0005, oPC);
+            }
         }
     }
-
 }
+
+//RENAME THIS
+
 
 //potential functions
 //GetNearestCreature

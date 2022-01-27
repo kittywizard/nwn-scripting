@@ -1,17 +1,1 @@
-{
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "..\\..\\Neverwinter Nights\\modules"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "game-script-js",
-		"files.exclude": {
-			"**/*.ncs": true,
-			"**/*.ndb": true
-		}
-	}
-}
+{ "folders": [ { "path": "modules" } ], "settings": { "files.exclude": { "**/*.are": true, "**/*.dlg": true, "**/*.exe": true, "**/*.fac": true, "**/*.gic": true, "**/*.git": true, "**/*.ifo": true, "**/*.itp": true, "**/*.jrl": true, "**/*.mod": true, "**/*.ncs": true, "**/*.utc": true, "**/*.ute": true, "**/*.uti": true, "**/*.utp": true, "**/*.uts": true } } }

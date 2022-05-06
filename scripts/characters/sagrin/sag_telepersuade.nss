@@ -1,14 +1,18 @@
 //::///////////////////////////////////////////////
-//:: FileName at_001
+//:: FileName sag_telepersuade
 //:://////////////////////////////////////////////
 //:://////////////////////////////////////////////
 //:: Created By: Script Wizard
-//:: Created On: 1
+//:: Created On: 2
 //:://////////////////////////////////////////////
-void main()
-{
-    // Set the variables
-    SetLocalInt(GetPCSpeaker(), "SagrinTalked", 1);
-    SetLocalInt(GetPCSpeaker(), "SagrinTeleport", 0);
+#include "nw_i0_tool"
 
+int StartingConditional()
+{
+
+	// Perform skill checks
+	if(!(AutoDC(DC_HARD, SKILL_PERSUADE, GetPCSpeaker())))
+		return FALSE;
+
+	return TRUE;
 }

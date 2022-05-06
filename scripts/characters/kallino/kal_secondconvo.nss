@@ -1,9 +1,8 @@
-
 int StartingConditional()
 {
 
 	// Inspect local variables
-	if(!(GetLocalInt(GetPCSpeaker(), "SagrinTalked") == 1))
+	if(!(GetLocalInt(GetPCSpeaker(), "KalSecondConvo") == 1))
 		return FALSE;
 
 	return TRUE;

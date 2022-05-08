@@ -1,2 +1,6 @@
-# nwn-scripting
-a place for me to collect my NWN scripts
+## nwn-scripting
+
+
+# The Copper Chicken
+
+An in-progress module for Neverwinter Nights, created by @kittywizard. An exercise in the Aurora Toolset and writing creatively. All scripts here are basic and free for use, if they are helpful to you!

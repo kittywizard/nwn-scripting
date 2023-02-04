@@ -1,6 +1,9 @@
-// Set local variable to test if Kallino has been talked to
-void main()
-{
-    SetLocalInt(GetPCSpeaker(), "KallinoTalked", TRUE);
-}
 
+int StartingConditional()
+{
+	// Inspect local variables
+	if(GetLocalInt(GetPCSpeaker(), "KallinoTalked") == 1)
+		return TRUE;
+
+	return FALSE;
+}

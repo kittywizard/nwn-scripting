@@ -1,10 +1,11 @@
 void main()
 {
     object oSagrin = GetObjectByTag("Sagrin");
-    object oPC = GetEnteringObject();
-    SetLocalInt(oPC, "SagrinTeleport", 1);
+    object oPC = GetFirstPC();
+    int iSagrinTeleport = GetLocalInt(oPC, "SagrinTeleport");
 
-    if(GetIsPC(oPC)) {
+    if(iSagrinTeleport == 1) {
+        //SetLocalInt(oPC, "SagrinTeleport", 1);
         AssignCommand(oSagrin, ActionStartConversation(oPC));
-        }
+    }
     }

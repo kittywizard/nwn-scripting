@@ -6,4 +6,5 @@ void main()
     //iKallinoRespect++;
 
     SetLocalInt(GetPCSpeaker(), "QuinRespectCount", iQuinRespect);
+    SendMessageToPC(GetPCSpeaker() , "Quin respects you.");
 }

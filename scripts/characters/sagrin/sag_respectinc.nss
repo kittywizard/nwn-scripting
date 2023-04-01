@@ -1,13 +1,10 @@
-//::///////////////////////////////////////////////
-//:: FileName sag_respectinc
-//:://////////////////////////////////////////////
-//:://////////////////////////////////////////////
-//:: Created By: Script Wizard
-//:: Created On: 2
-//:://////////////////////////////////////////////
+#include "respectchecker"
 void main()
 {
-	// Set the variables
-	SetLocalInt(GetPCSpeaker(), "SagrinRespect", 1);
+    int iSagrinRespect = GetLocalInt(GetPCSpeaker(), "SagrinRespect");
+
+    int iRespectResult = RespectChecker(iSagrinRespect, 0);
+    SetLocalInt(GetPCSpeaker(), "SagrinRespect", iRespectResult);
+    SendMessageToPC(GetPCSpeaker() , "Sagrin respects you.");
 
 }
